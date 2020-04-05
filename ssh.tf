@@ -19,7 +19,7 @@ resource "aws_secretsmanager_secret" "private3" {
 
 resource "aws_secretsmanager_secret_version" "secrets"{
     
-secret_id ="${aws_secretsmanager_secret.private2.id}"
+secret_id ="${aws_secretsmanager_secret.private3.id}"
 secret_string="${tls_private_key.ssh-gen.private_key_pem}"
 
 }
