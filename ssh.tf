@@ -13,8 +13,8 @@ resource "local_file" "foo" {
 }
 
 
-resource "aws_secretsmanager_secret" "private2" {
-  name = "private2"
+resource "aws_secretsmanager_secret" "private3" {
+  name = "private3"
 }
 
 resource "aws_secretsmanager_secret_version" "secrets"{
