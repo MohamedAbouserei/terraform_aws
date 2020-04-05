@@ -4,12 +4,3 @@ provider "aws" {
   shared_credentials_file = "~/.aws/credentials"
   profile = "access"
 }
-terraform {
-  backend "s3" {
-    shared_credentials_file = "~/.aws/credentials"
-    profile = "access"
-    bucket = "terraform-iti2"
-    key    = "state/state.tfstate"
-    region = "us-east-2"
-  }
-}
