@@ -8,7 +8,7 @@ terraform {
   backend "s3" {
     shared_credentials_file = "~/.aws/credentials"
     profile = "access"
-    bucket = "terraform-iti"
+    bucket = "terraform-iti2"
     key    = "state/state.tfstate"
     region = "us-east-2"
   }
