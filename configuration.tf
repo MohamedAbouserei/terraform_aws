@@ -1,19 +1,19 @@
 provider "aws" {
   version = "~> 2.0"
   region  = "us-east-2"
-  # access_key = "AKIAJAJDFVTR72IZZK5A"
-  # secret_key = "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"
-  shared_credentials_file = "credentials"
-  profile = "access"
+    access_key = "AKIA5ZO3GBQKKALZOFUH"
+     secret_key = "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"
+  #shared_credentials_file = "credentials"
+  #profile = "access"
 }
 terraform {
   backend "s3" {
-    shared_credentials_file = "credentials"
-    profile = "access"
+   # shared_credentials_file = "credentials"
+    #profile = "access"
     bucket = "terraform-iti"
     key    = "state/state.tfstate"
     region = "us-east-2"
-    # access_key = "AKIAJAJDFVTR72IZZK5A"
-    # secret_key = "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"
+     access_key = "AKIA5ZO3GBQKKALZOFUH"
+     secret_key = "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"
   }
 }
